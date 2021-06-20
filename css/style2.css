@@ -1,0 +1,260 @@
+
+#header{
+    position: relative;
+    width: 100%;
+}
+
+.menu{
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 60px;
+    background: #1d2124;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 9999;
+    border-left: 0;
+    border-top: 0;
+    border-right: 0;
+    border-bottom: 3px solid #004d40;
+}
+
+.menu .logo{
+    margin-left: 20px;
+}
+
+.menu .logo h1 a{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-decoration: none;
+    font-size: 40px;
+    font-weight: 40;
+    color: #ff6600;
+}
+
+.menu .list-container{
+    margin-right:20px ;
+}
+
+.menu .list-container .list{
+     display: flex;
+}
+
+
+
+.menu .list-container .list  li{
+    list-style: none;
+    display: flex;
+}
+
+.menu .list-container .list li a{
+    text-decoration: none;
+    margin: 0px 25px;
+    padding: 8px;
+    color: #fbaf32;
+    border-radius: 24px;
+    transition: 0.3s;
+}
+
+.menu .list-container .list li a.activo{
+    background:#f4000050;
+    color: white;
+}
+
+.menu .list-container .list li a:hover{
+    background:#f4000050;
+    color: white;
+}
+
+.list-container span{
+    font-size: 20px;
+}
+
+.filter{
+    
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    opacity: .7 ;
+}
+
+.fh{
+    color: white;
+    margin-top: 80px;
+    text-align: center;
+}
+
+/*======================CONTACTOS======================*/
+
+.contenidoF{
+    
+    height: 100%;
+    width: 100%;
+    background-image: url(../img/f5.jpg); 
+     
+    margin-left: -8px;  
+    background-position:center;
+    background-size: cover;
+    position: fixed;
+
+}
+
+.tbl{
+    position: absolute;
+    z-index: 2;
+    left: 50%;
+    top: 40%;
+    transform: translate(-50%,-50%);
+    width: 60%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    border-radius: 12px 12px 0 0;
+    overflow: hidden;
+    box-shadow:0 2px 12px rgba(32, 32, 32, .3);
+    background: white;
+    text-align: center;
+}
+
+th, td{
+    padding: 12px 15px ;
+}
+
+th{
+
+    background: #ff8f00;
+    color: #fafafa;
+    text-transform: uppercase;
+    font-family: sans-serif;
+}
+
+tr:nth-child(odd){
+    background-color: #FFCF99 ;
+}
+
+
+.btnN{
+    margin-top: 250px;
+    margin-left: 580px;
+    
+}
+
+.btna{
+    padding: 10px 30px;
+    border-radius: 50px;
+    font-size: 20px;
+    background: linear-gradient( to right, rgba(63,81,181,0.7), rgba(0,188,212,0.7));
+    cursor: pointer;
+    border: 0px;
+    
+}
+
+/*============Nuevo Contacto============*/
+
+.imgFor{
+    height: 100%;
+    width: 100%;
+    background-image: url(../img/fondo4.jpg);
+    margin-top: -8px;
+    margin-left: -8px;  
+    background-position:center;
+    background-size: cover;
+    position: fixed;
+}
+.contenedor{
+    width: 100%;
+    padding: 15px;
+    
+}
+
+.formulario{
+    background: #222222;
+    margin-top: 150px;
+    padding: 25px;
+}
+
+h1{
+    text-align: center;
+    color: white;
+    font-size: 40px;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"]{
+    font-size: 20px;
+    width: 82%;
+    padding: 5px;
+    border-left: 0;
+    border-top: 0;
+    border-right: 0;
+    border-bottom: 2px solid #004d40;
+    border-radius: 0px;
+    outline: none;
+    background: transparent;
+}
+
+.input-contenedor{
+    margin-bottom: 15px;
+    
+}
+
+.inf{
+    text-decoration: none;
+    color: black;
+    background:rgb(82, 142, 145);;
+    border-radius: 6px;
+    padding: 5px;
+}
+
+.inf:hover{
+    
+    background: linear-gradient( to right, rgba(63,81,181,0.7), rgba(0,188,212,0.7));
+    
+}
+
+
+.button{
+    border: none;
+    width: 100%;
+    color: white;
+    font-size: 20px;
+    background: cadetblue;
+    padding: 15px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+
+
+.button:hover{
+    background: linear-gradient( to right, rgba(63,81,181,0.7), rgba(0,188,212,0.7));
+}
+
+.f{
+    text-decoration: none;
+    margin: 190px;
+    padding: 15px;
+    margin-top: 270px;
+    margin-bottom: 25px;
+    
+}
+
+
+
+
+
+
+
+@media(min-width:768px){
+    .formulario{
+        margin: auto;
+        width: 500px;
+        margin-top: 50px;
+        border-radius: 3%;
+    }
+}
+
